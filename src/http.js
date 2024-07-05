@@ -5,6 +5,7 @@ export async function fetchAvailablePlaces() {
   if (!response.ok) {
     throw new Error('Failed to fetch places');
   }
+
   return resData.places;
 }
 
@@ -15,6 +16,7 @@ export async function fetchUserPlaces() {
   if (!response.ok) {
     throw new Error('Failed to fetch user places');
   }
+
   return resData.places;
 }
 
